@@ -41,3 +41,17 @@
 ## breaks into smaller parts, then deal with separately and combine to solve
 ## time complexite = O(n log(n))
 ## space complexity= O(n)  additional space required for temporary arrays in process
+
+# QUICK SORT
+## divide and conquer + a pivot
+## time complexity = O(n log(n)) to O(n^2)
+## space complexity = O(log((n)) to O(n)
+## in place sorting, but needs space on call stack for recursion
+## worst is when sub arrays are unbalanced
+
+# choosing
+##bubble and insertion are good for small data sets or educational purposes
+##selection is better for k
+## insertion is good for nearly sorted
+## merge sort big data set
+## quick sort is default choice for arrays in some languages

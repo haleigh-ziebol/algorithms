@@ -10,4 +10,3 @@ def selection_sort(arr):
 example_list = [64, 25, 12, 22, 11]
 sorted_list = selection_sort(example_list)
 print(sorted_list)
-
