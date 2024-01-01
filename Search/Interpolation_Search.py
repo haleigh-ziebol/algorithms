@@ -1,6 +1,6 @@
 def interpolation_search(arr, x):
  low = 0
- high = len(arr) - 1
+ high = len(arr) - 1 ## last element in array
 
  while low <= high and x >= arr[low] and x <= arr[high]:
     if low == high:
@@ -14,9 +14,9 @@ def interpolation_search(arr, x):
         return pos
 
     if arr[pos] < x:
-        low = pos + 1
+        low = pos + 1 ## too low
     else:
-        high = pos - 1
+        high = pos - 1 ## too high
 
  return -1
 
