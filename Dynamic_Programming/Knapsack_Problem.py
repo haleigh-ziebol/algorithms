@@ -1,23 +1,3 @@
-def fibonacci(n):
-    if n <= 1:
-        return n
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
-   
-# Example usage
-n = 20  # Change this value to compute a different term in the sequence
-print(f"The {n}th Fibonacci number is: {fibonacci(n)}")
-
-# Memoization
-def fibonacci_memo(n, memo={}):
-    if n in memo:
-        return memo[n]
-    if n <= 1:
-        return n
-
-    memo[n] = fibonacci_memo(n - 1, memo) + fibonacci_memo(n - 2, memo)
-    return memo[n]
-
 # Brute Force
 def knapsack_brute(v, w, n, W):
     # Base Case: No items left or no remaining capacity in the knapsack
